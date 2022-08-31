@@ -9,17 +9,17 @@ public:
     }
     
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> out;
+        vector<int> out1;
         int k;
         for(int i = 0;i < nums.size()-1;i++){
             // cout<<target-nums[i]<<"<\n";
             k = findIt(nums,i,(target - nums[i]));
             if(k != -1){
-                out.push_back(i);
-                out.push_back(k);
+                out1.push_back(i);
+                out1.push_back(k);
                 break;
             }
         }
-        return out;    
+        return out1;    
     }
 };
